@@ -50,12 +50,6 @@ void mostrarPersona(EPersona persona){
     printf("DNI: %d\nNombre: %s\nEdad: %d\n\n", persona.dni, persona.nombre, persona.edad);
 }
 
-/**
- * Da de alta una nueva persona.
- * \param array El array donde se va a almacenar.
- * \param arrayLenght La longitud del array donde se va a almacenar.
- */
-
 void altaPersona(EPersona array[], int arrayLenght){
 
     EPersona persona;
