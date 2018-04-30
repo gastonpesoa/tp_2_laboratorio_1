@@ -33,11 +33,6 @@ int buscarPorDni(EPersona lista[], int arrayLenght, int dni){
     return -1;
 }
 
-/**
- * Muestra los datos almacenados en una estructura de persona.
- * \param persona El array que se va a mostrar.
- */
-
 void mostrarPersona(EPersona persona){
     printf("DNI: %d\nNombre: %s\nEdad: %d\n\n", persona.dni, persona.nombre, persona.edad);
 }
