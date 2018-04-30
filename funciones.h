@@ -57,6 +57,12 @@ void altaPersona(EPersona array[], int arrayLenght);
  * \param arrayLenght La longitud del array donde se va a almacenar.
  */
 void borrarPersona(EPersona array[], int arrayLenght);
+
+/**
+ * Ordena alfabeticamente el array ingresado.
+ * \param array El array que se ordenara.
+ * \param arrayLenght La longitud del array.
+ */
 void listaOrdenada(EPersona array[], int arrayLenght);
 void imprimrGrafico(EPersona array[], int arrayLenght);
 
