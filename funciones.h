@@ -38,6 +38,10 @@ int obtenerEspacioLibre(EPersona lista[], int arrayLenght);
  */
 int buscarPorDni(EPersona lista[], int arrayLenght, int dni);
 
+/**
+ * Muestra los datos almacenados en una estructura de persona.
+ * \param persona El array que se va a mostrar.
+ */
 void mostrarPersona(EPersona persona);
 
 /**
