@@ -51,6 +51,11 @@ void mostrarPersona(EPersona persona);
  */
 void altaPersona(EPersona array[], int arrayLenght);
 
+/**
+ * Borra de la lista, luego de confirmar la baja, a la persona con el DNI ingresado.
+ * \param array El array donde se va a buscar la persona con el DNI ingresado.
+ * \param arrayLenght La longitud del array donde se va a almacenar.
+ */
 void borrarPersona(EPersona array[], int arrayLenght);
 void listaOrdenada(EPersona array[], int arrayLenght);
 void imprimrGrafico(EPersona array[], int arrayLenght);
