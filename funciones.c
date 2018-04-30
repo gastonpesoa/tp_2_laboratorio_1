@@ -6,15 +6,6 @@
 #include "funciones.h"
 #include "bibliotecaInput.h"
 
-/**
- * \brief Inicializa el estado en un array de personas
- * \param personaArray Es el array el cual se inicializara
- * \param arrayLenght Indica la longitud del array
- * \param value Es el valor que se asignara a estado
- * \return -
- *
- */
-
 void inicializarEstado(EPersona personaArray[], int arrayLenght, int value){
     int i;
     for (i = 0; i < arrayLenght; i++){
