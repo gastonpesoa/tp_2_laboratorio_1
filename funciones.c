@@ -23,14 +23,6 @@ int obtenerEspacioLibre(EPersona lista[], int arrayLenght){
     return -1;
 }
 
-/**
- * Obtiene el indice que coincide con el dni pasado por parametro.
- * \param lista El array se pasa como parametro.
- * \param arrayLenght Indica la longitud del array
- * \param dni El dni a ser buscado en el array.
- * \return Si no hay coincidencia (-1) y si la hay, el indice en donde se encuentra el elemento que coincide con el parametro dni
- */
-
 int buscarPorDni(EPersona lista[], int arrayLenght, int dni){
     int i;
     for (i = 0; i < arrayLenght; i++) {
