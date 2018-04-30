@@ -172,13 +172,6 @@ void listaOrdenada(EPersona array[], int arrayLenght){
     }
 }
 
-/**
-
- * Imprime grafico de barras de 3 grupos de edades, menores de 18, entre 19 a 35 y mayores de 35.
- * \param array El array que se ordenara.
- * \param arrayLenght La longitud del array.
- */
-
 void imprimrGrafico(EPersona array[], int arrayLenght){
     int i, j, mayor = 0, filas;
     int contadores[3];
