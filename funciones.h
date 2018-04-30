@@ -5,22 +5,20 @@
 #include <stdio.h>
 
 typedef struct {
-
-
-
     char nombre[50];
-
     int edad;
-
     int estado;
-
     int dni;
-
-
-
 }EPersona;
 
-
+/**
+ * \brief Inicializa el estado en un array de personas
+ * \param personaArray Es el array el cual se inicializara
+ * \param arrayLenght Indica la longitud del array
+ * \param value Es el valor que se asignara a estado
+ * \return -
+ *
+ */
 void inicializarEstado(EPersona personaArray[], int arrayLenght, int value);
 
 int obtenerEspacioLibre(EPersona lista[], int arrayLenght);
