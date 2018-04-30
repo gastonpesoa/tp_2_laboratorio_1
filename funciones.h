@@ -64,6 +64,12 @@ void borrarPersona(EPersona array[], int arrayLenght);
  * \param arrayLenght La longitud del array.
  */
 void listaOrdenada(EPersona array[], int arrayLenght);
+
+/**
+ * Imprime grafico de barras de 3 grupos de edades, menores de 18, entre 19 a 35 y mayores de 35.
+ * \param array El array que se ordenara.
+ * \param arrayLenght La longitud del array.
+ */
 void imprimrGrafico(EPersona array[], int arrayLenght);
 
 #endif /* defined(__TP_2_PROGRAMACION_I__funciones__) */
