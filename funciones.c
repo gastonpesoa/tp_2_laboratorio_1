@@ -142,13 +142,6 @@ void borrarPersona(EPersona array[], int arrayLenght){
     }
 }
 
-/**
-
- * Ordena alfabeticamente el array ingresado.
- * \param array El array que se ordenara.
- * \param arrayLenght La longitud del array.
- */
-
 void listaOrdenada(EPersona array[], int arrayLenght){
     EPersona arrayAux;
     int i, j;
