@@ -13,13 +13,6 @@ void inicializarEstado(EPersona personaArray[], int arrayLenght, int value){
     }
 }
 
-/**
- * Obtiene el primer indice libre del array.
- * \param lista El array se pasa como parametro.
- * \param arrayLenght Indica la longitud del array
- * \return Si no hay lugares libres (-1) y si la hay el primer indice disponible
- */
-
 int obtenerEspacioLibre(EPersona lista[], int arrayLenght){
     int i;
     for(i = 0; i < arrayLenght; i++){
