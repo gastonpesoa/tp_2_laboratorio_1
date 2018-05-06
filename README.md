@@ -1,5 +1,5 @@
 # TP 2 de la materia Programación I – Laboratorio I UTN FRA 
-/******************************************************************
+******************************************************************
  *
  * Objetivo:
  * Definir una estructura que represente una persona, con los campos nombre, edad, dni y un flag de estado.
@@ -22,4 +22,4 @@
  * Version: 0.2 del 06 de mayo de 2018
  * Autor: Gaston Pesoa
  *
- * *******************************************************************/
+********************************************************************
