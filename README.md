@@ -1,5 +1,4 @@
-# tp_2_laboratorio_1
-TP 2 de la materia Programación I – Laboratorio I UTN FRA 
+# TP 2 de la materia Programación I – Laboratorio I UTN FRA 
 /******************************************************************
  * Programación I – Laboratorio I
  * Programa: Trabajo práctico No 2.
