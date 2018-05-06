@@ -1,3 +1,30 @@
+/******************************************************************
+ * Programación I – Laboratorio I
+ * Programa: Trabajo práctico No 2.
+ *
+ * Objetivo:
+ * Definir una estructura que represente una persona, con los campos nombre, edad, dni y un flag de estado.
+ *
+ *	    Hacer un programa que defina un array de 20 ítems de esta estructura y con un menú como el siguiente:
+ *      1. Agregarunapersona
+ *      2. Borrarunapersona
+ *      3. Imprimirlistaordenadapornombre
+ *      4. Imprimirgráficodeedades
+ *
+ * Aspectos a destacar:
+ *
+ *   Se utilizará el campo de estado para indicar si el ítem del array esta ocupado o no.
+ *   El gráfico deberá ser un gráfico de barras en donde se agruparán 3 barras:
+ *      • Menores de 18
+ *      • De19a35
+ *      • Mayores de 35.
+ *      En el eje Y se marcarán la cantidad de personas en el grupo, y en el eje X el grupo
+ *
+ * Version: 0.2 del 06 de mayo de 2018
+ * Autor: Gaston Pesoa
+ *
+ * *******************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -5,63 +32,57 @@
 #include "funciones.h"
 #include "bibliotecaInput.h"
 
-#define CANT_PER 20
 
-int main()
-{
+
+int main() {
+
+    // Array de personas
     EPersona persona[CANT_PER];
+    inicializarEstado(persona, CANT_PER, INACTIVO);
 
-    char auxiliarOpcionStr[50];
-    char seguir='s';
-    int opcion=0;
+    //HardCode con datos para test
+    testPersona(persona);
 
-    inicializarEstado(persona, CANT_PER, 1);
+    // Variables globales
+    char menuPrinsipalMensaje[] =
+            "\n\n1- Agregar persona\
+            \n2- Borrar persona\
+            \n3- Imprimir lista ordenada por  nombre\
+            \n4- Imprimir grafico de edades\
+            \n5- Salir\
+            \n\nIngrese una opcion: ";
 
-    while(seguir=='s')
-    {
-        printf("1- Agregar persona\n");
-        printf("2- Borrar persona\n");
-        printf("3- Imprimir lista ordenada por  nombre\n");
-        printf("4- Imprimir grafico de edades\n\n");
-        printf("5- Salir\n");
+    char menuPrinsipalMensajeError[] = "\nSe debe elegir una opcion del 1 al 5";
 
-        while (!getStringNumeros("\nIngrese la opcion: ", auxiliarOpcionStr)) {
-            system("clear");
-            printf("\nLa opcion debe ser numerica\n\n");
-            printf("1- Agregar persona\n");
-            printf("2- Borrar persona\n");
-            printf("3- Imprimir lista ordenada por  nombre\n");
-            printf("4- Imprimir grafico de edades\n\n");
-            printf("5- Salir\n");
-        }
+    int opcion = 0;
 
-        opcion = atoi(auxiliarOpcionStr);
+    while (opcion != 5) {
 
-        switch(opcion)
-        {
-            default:
-                system("clear");
-                printf("\nLa opcion debe ser un valor entre 1 y 5\n\n");
-                break;
-            case 1:
+        //clearScreen();
+        printf("\n\n--------------------------------------------\n|*             MENU PRINCIPAL             *|\n--------------------------------------------");
+
+        opcion = getValidInt(menuPrinsipalMensaje, menuPrinsipalMensajeError, 1, 5);
+
+        switch(opcion) {
+
+            case 1: // Alta de persona
                 altaPersona(persona, CANT_PER);
                 break;
-            case 2:
+
+            case 2: // Borrar persona
                 borrarPersona(persona, CANT_PER);
                 break;
-            case 3:
+
+            case 3: // Lista ordenada de personas
                 listaOrdenada(persona, CANT_PER);
                 break;
-            case 4:
+
+            case 4: // Histograma de edades
                 imprimrGrafico(persona, CANT_PER);
                 break;
-            case 5:
-                seguir = 'n';
-                break;
-        }
-    }
+
+        } // switch(opcion)
+    } // while (opcion != 5)
 
     return 0;
-
-}
-
+} // int main()

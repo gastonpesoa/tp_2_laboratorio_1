@@ -31,6 +31,19 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="bibliotecaInput.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bibliotecaInput.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="funciones.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="funciones.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
