@@ -1,7 +1,5 @@
 # TP 2 de la materia Programación I – Laboratorio I UTN FRA 
 /******************************************************************
- * Programación I – Laboratorio I
- * Programa: Trabajo práctico No 2.
  *
  * Objetivo:
  * Definir una estructura que represente una persona, con los campos nombre, edad, dni y un flag de estado.
